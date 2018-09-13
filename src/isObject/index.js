@@ -10,7 +10,7 @@
 const isObject = data => {
   /* your logic here...*/
   const type = typeof data
-  return data != null && (type === 'object' || type === 'function')
+  return data != null && !Array.isArray(data) && (type === 'object' || type === 'function')
 };
 
 export default isObject;
