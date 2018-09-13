@@ -12,6 +12,7 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+  return arr.reduce((a, b) => (Number.isInteger(a) ? a : 0) + (Number.isInteger(b) ? b : 0))
 };
 
 export default sumElements;
