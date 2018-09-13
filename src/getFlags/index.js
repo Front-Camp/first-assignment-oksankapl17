@@ -7,6 +7,9 @@
  */
 const getFlags = arr => {
   /* your logic here...*/
+  let newArr = [];
+  arr.map(obj => newArr.push.apply(newArr, obj.flags));
+  return newArr;
 };
 
 export default getFlags;
